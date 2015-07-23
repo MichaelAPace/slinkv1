@@ -32,15 +32,11 @@ app.post('/test', function (req,res){
   })
   req.on('end', function(){
     console.log('/test')
-    console.log(body)
+    console.log('body')
   })
   res.writeHead(200)
   res.end()
 })
-
-
-
-
 
 
 
