@@ -22,6 +22,28 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
+//SLINK TEST v1
+app.post('/test', function (req,res){
+  var body =''
+  req.on('data', function (data){
+    body += data
+  })
+  req.on('end', function(){
+    console.log('/test')
+    console.log(body)
+  })
+  res.writeHead(200)
+  res.end()
+})
+
+
+
+
+
+
+
 app.use('/', routes);
 app.use('/users', users);
 
