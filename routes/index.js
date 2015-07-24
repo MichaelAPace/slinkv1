@@ -34,8 +34,9 @@ router.get('/test3', function (req, res,next){
 router.post('/test3', function (req,res, next){
     console.log(req.body)
     console.log(req.body)
-    links.insert(req.body)
-    res.render('test3', {body:req.body.text})
+    links.insert(req.body, function(err,doc){
+      res.render('test3', doc)
+    })
 })
 
 module.exports = router;
