@@ -33,10 +33,20 @@ app.post('/test', function (req,res){
   req.on('end', function(){
     console.log('/test')
     console.log('body')
+    console.log('req')
   })
   res.writeHead(200)
   res.end()
 })
+
+
+//test2
+// app.post('/test2', function (req,res){
+//
+//   console.log(req.body)
+//   res.end()
+// })
+//
 
 
 

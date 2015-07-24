@@ -1,0 +1,21 @@
+<form action="/test2" method="post">
+    <label for="url">URL:<br>
+    <input type="text" name="url" id="url"/></label>
+<br>
+   <label>Name:<br>
+     <input type="text" name="name" value=""></label>
+<br>
+      <label>Color:<br>
+      <input type="text" name="color" value=""></label>
+<br>
+<input type="submit" value="Submit">
+</form>
+
+This is the URL tested:
+{{#if body}}
+
+{{body.url}},
+{{body.name}},
+{{body.color}}
+
+{{/if}}
