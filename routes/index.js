@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var db = require('monk')(process.env.MONGOLAB_URI);
+var db = db.get('links')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,6 +34,7 @@ router.get('/test3', function (req, res,next){
 router.post('/test3', function (req,res, next){
     console.log(req.body)
     console.log(req.body)
+    links.insert(req.body)
     res.render('test3', {body:req.body.text})
 })
 
