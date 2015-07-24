@@ -22,4 +22,16 @@ router.post('/test2', function (req,res, next){
     res.render('test2', {body:req.body})
 })
 
+
+
+//TEST 3
+router.get('/test3', function (req, res,next){
+  res.render ('test3')
+})
+
+router.post('/test3', function (req,res, next){
+    console.log(req.body.url)
+    res.render('test3', {body:req.body})
+})
+
 module.exports = router;
