@@ -5,7 +5,10 @@ var links = db.get('links')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  links.find({}, function (err,docs){
+    if (err) throw err
+    res.render('/', {docs: docs})
+  })
 });
 
 //GET /TEST
@@ -35,7 +38,7 @@ router.post('/test3', function (req,res, next){
     console.log(req.body)
     console.log(req.body)
     links.insert(req.body, function(err,doc){
-      res.render('test3', doc)
+      res.redirect('/', doc)
     })
 })
 
