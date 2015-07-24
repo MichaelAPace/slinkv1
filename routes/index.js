@@ -31,7 +31,8 @@ router.get('/test3', function (req, res,next){
 
 router.post('/test3', function (req,res, next){
     console.log(req.body)
-    res.render('test3', {body:req.body})
+    console.log(req.body)
+    res.render('test3', {body:req.body.text})
 })
 
 module.exports = router;
