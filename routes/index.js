@@ -30,7 +30,7 @@ router.get('/test3', function (req, res,next){
 })
 
 router.post('/test3', function (req,res, next){
-    console.log(req.body.url)
+    console.log(req.body)
     res.render('test3', {body:req.body})
 })
 
