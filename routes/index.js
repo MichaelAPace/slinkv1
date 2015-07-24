@@ -7,7 +7,7 @@ var links = db.get('links')
 router.get('/', function(req, res, next) {
   links.find({}, function (err,docs){
     if (err) throw err
-    res.render('/', {docs: docs})
+    res.render('index', {docs: docs})
   })
 });
 
