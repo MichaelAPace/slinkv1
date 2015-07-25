@@ -2,10 +2,13 @@
 <p>Welcome to {{title}}</p>
 
 
-
-{{#each docs}}
-
-{{docs}}<br>
-<b>Link added:</b> {{text}} <b>From User: </b>{{user_name}}
-
-{{/each}}
+<tbody>
+  {{#each docs}}
+  <tr>
+    {{docs}}<br>
+    <td>
+      <b>Link added:</b> {{text}} <b>From User: </b>{{user_name}}
+    </td>
+  </tr>
+  {{/each}}
+</tbody>
