@@ -1,3 +1,30 @@
+
+header {
+  height: 225px;
+  width: 100%;
+  /* background: #72B01D; */
+  background: #A8C686;
+  margin-top:0px;
+}
+
+.headertext {
+  color: #F6511D;
+  font-size: 100px;
+  padding-top:10px;
+ text-align: center;
+}
+.subheadtext {
+  color: #0D2C54;
+  font-size:30px;
+  text-align: center;
+}
+
+.content {
+  background: #F3A712;
+  margin-top: 10px;
+  padding: 20px;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;

@@ -1,14 +1,30 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SLINK!</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<header>
+  <div class=headertext>
+    SLiNK!
+  </div>
+  <div class=subheadtext>
+    Want to save all those great links you share in Slack?
+    <br>
+    Use '/slink' + 'example.com' to automatically archive your team's links in SLiNK!
+  </div>
+</header>
+<div class=content>
 <tbody>
   {{#each docs}}
   <tr>
-    <!-- {{docs}}<br> -->
+    {{docs}}<br>
     <td>
       <b>Link added:</b> <a target="_blank" href='{{text}}'>{{text}}</a> <b>From User: </b>{{user_name}}
     </td>
   </tr>
   {{/each}}
 </tbody>
+</div>
