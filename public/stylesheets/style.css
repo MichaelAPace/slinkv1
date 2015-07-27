@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 header {
   height: 225px;
@@ -18,7 +20,7 @@ header {
   color: #0D2C54;
   font-size:30px;
   text-align: center;
-  font: "Merriweather;"
+  font: "Merriweather";
 }
 
 .content {
@@ -63,6 +65,3 @@ table td {
   font-size: 20px;
   text-decoration: none;
 }
-
-font-family: 'Merriweather', serif;
-font-family: 'Lato', sans-serif;
