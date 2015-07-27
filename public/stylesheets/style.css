@@ -39,6 +39,7 @@ body {
 
 a {
   color: #DimGrey;
+  text-decoration:none;
 }
 
 table {
