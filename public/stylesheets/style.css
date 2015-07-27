@@ -13,8 +13,8 @@ header {
   color: #F6511D;
   font-size: 100px;
   padding-top:10px;
- text-align: center;
- font-family:"lato";
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 .subheadtext {
   color: #0D2C54;
@@ -27,14 +27,14 @@ header {
   background: #CDD8C0;
   margin-top: 10px;
   padding: 20px;
-  font-family:"lato";
+  font-family: 'Lato', sans-serif;
 }
 
 body {
   padding-top: 5px;
   padding-left:10px
   padding-right: 10px
-  font: 14px "lato", Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 a {
