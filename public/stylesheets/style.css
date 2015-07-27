@@ -14,19 +14,20 @@ header {
   font-size: 100px;
   padding-top:10px;
  text-align: center;
- font:"lato";
+ font-family:"lato";
 }
 .subheadtext {
   color: #0D2C54;
   font-size:30px;
   text-align: center;
-  font: "Merriweather";
+  font-family: "Merriweather";
 }
 
 .content {
   background: #CDD8C0;
   margin-top: 10px;
   padding: 20px;
+  font-family:"lato";
 }
 
 body {
