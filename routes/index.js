@@ -28,13 +28,13 @@ router.post('/test3', function (req,res, next){
       }
     }
     result = []
-    result.push(titles)
+    result.push(titles + " ")
     result.push(links)
 
     req.body.title=result[0]
     req.body.url=result[1]
     console.log('inside the findlink fn')
-  
+
     return result;
 
   }
