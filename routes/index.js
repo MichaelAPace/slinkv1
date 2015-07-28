@@ -34,12 +34,12 @@ router.get('/', function(req, res, next) {
 //   res.render ('test3')
 // })
 //
-// router.post('/test3', function (req,res, next){
-//     console.log(req.body)
-//     console.log(req.body)
-//     links.insert(req.body, function(err,doc){
-//       res.redirect('/', doc)
-//     })
-// })
+router.post('/test3', function (req,res, next){
+    console.log(req.body)
+    console.log(req.body)
+    links.insert(req.body, function(err,doc){
+      res.redirect('/', doc)
+    })
+})
 
 module.exports = router;
