@@ -30,12 +30,18 @@ router.post('/test3', function (req,res, next){
     result = []
     result.push(titles)
     result.push(links)
+
+    req.body.title=result[0]
+    req.body.url=result[1]
+    console.log('inside the findlink fn')
+  
     return result;
+
   }
   findLink(req.body.text)
-  req.body.title=findLink[0]
-  req.body.url=findLink[1]
-  
+  console.log(findLink)
+
+
   links.insert(req.body, function(err,doc){
     res.redirect('/', doc)
   })
