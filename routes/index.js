@@ -24,7 +24,7 @@ router.post('/test3', function (req,res, next){
       if(regexp.test(splitVersion[i]) === true){
         links += splitVersion[i];
       }else{
-        titles += splitVersion[i] = " ";
+        titles += splitVersion[i] + " ";
       }
     }
     result = []
