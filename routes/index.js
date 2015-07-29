@@ -6,12 +6,11 @@ var linktitles = db.get('linktitles');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var sort = {'_id': -1};
-  links.find ({}, function (err,docs){
+  links.find({ $query: {}, $orderby: { columm : -1 } }, function (err,docs){
     if (err) throw err
     res.render('index', {docs: docs});
   });
-}).sort({_id: 1});
+});
 
 router.post('/test3', function (req,res, next){
   function findLink(s) {
