@@ -45,8 +45,8 @@ a {
 table {
   border: px solid #ccc;
   width: 100%;
-/*   background: #CDD8C0;
-border-bottom: 6px solid #F6511D; */
+  background: #CDD8C0;
+  /* border-bottom: 6px solid #fff; */
 }
 
 table th{
@@ -58,7 +58,7 @@ table th{
 table tr {
   border: 1px solid #ddd;
   padding 5px;
-  /* border-bottom: 6px solid #F6511D; */
+  border-bottom: 6px solid #fff;
   font-size: 20px;
   /* background: #CDD8C0; */
 
@@ -67,8 +67,8 @@ table tr {
 table td {
   padding:10px;
   text-align: left;
-  border-bottom:6px solid #F6511D; */
+  /* border-bottom:6px solid #F6511D; */ */
   font-size: 20px;
   text-decoration: none;
-  background: #CDD8C0;
+  /* background: #CDD8C0; */
 }
