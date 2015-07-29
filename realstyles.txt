@@ -24,7 +24,7 @@ header {
 }
 
 .content {
-  /* background: #CDD8C0; */
+  background: #CDD8C0;
   margin-top: 10px;
   padding: 20px;
   font-family: 'Lato', sans-serif;
@@ -58,7 +58,6 @@ table tr {
   padding 5px;
   border-bottom: 6px solid #F6511D;
   font-size: 20px;
-  
 }
 
 table td {
