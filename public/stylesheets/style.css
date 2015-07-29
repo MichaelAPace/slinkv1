@@ -45,8 +45,8 @@ a {
 table {
   border: px solid #ccc;
   width: 100%;
-  background: #CDD8C0;
-  border-bottom: 6px solid #F6511D;
+/*   background: #CDD8C0;
+border-bottom: 6px solid #F6511D; */
 }
 
 table th{
@@ -67,7 +67,8 @@ table tr {
 table td {
   padding:10px;
   text-align: left;
-  /* border-bottom:6px solid #F6511D; */
+  border-bottom:6px solid #F6511D; */
   font-size: 20px;
   text-decoration: none;
+  background: #CDD8C0;
 }
