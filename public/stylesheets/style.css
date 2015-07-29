@@ -7,7 +7,7 @@ header {
   /* background: #72B01D; */
   background: #A8C686;
   margin-top:0px;
-  border-bottom: 20px solid #fff;
+  border-bottom: 25px solid #fff;
 }
 
 .headertext {
@@ -59,7 +59,7 @@ table th{
 table tr {
   border: 1px solid #ddd;
   padding 5px;
-  border-bottom: 6px solid #fff;
+  border-bottom: 8px solid #fff;
   font-size: 20px;
   /* background: #CDD8C0; */
 
