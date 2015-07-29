@@ -44,7 +44,7 @@ router.post('/test3', function (req,res, next){
 
   links.insert(req.body, function(err,doc){
     // res.redirect('/', doc)
-    res.end()
+    res.end("You've been slinked!")
   })
 })
 
