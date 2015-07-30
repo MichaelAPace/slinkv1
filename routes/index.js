@@ -44,7 +44,7 @@ router.post('/test3', function (req,res, next){
 
   links.insert(req.body, function(err,doc){
     // res.redirect('/', doc)
-    res.end('<a href="https://shielded-thicket-1008.herokuapp.com/">Slink</a>')
+    res.end("Your link has been SLiNKed!")
   })
 })
 
